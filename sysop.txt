@@ -1,0 +1,53 @@
+Alco-Solar by Zero Reader (Andrew Haworth) from alco.bbs.io, 
+ported from Python to Javascript by KenDB3 (Kenny DiBattista) from bbs.kd3.us.
+
+Table of Contents
+
+  I) Included and Created Files
+ II) External Program Configuration
+
+--------------------
+
+I) Included and Created Files
+
+Files included with the alco-solar door:
+	alco-solar.js           (Main Door Program)
+	ctrl-a_colors.js        (Control-A Colors)
+	sun-dead.asc            (Graphics)
+	sun-hi.asc              (Graphics)
+	sun-low.asc             (Graphics)
+	sun-med.asc             (Graphics)
+
+Files that may come with alco-solar depending on where you downloaded it from
+but these files are not specifically necessary for it to run:
+	.gitattributes
+	README.md
+
+Files created when alco-solar runs the first time (don't delete these files
+because they keep track of the last update from hamqsl.com):
+	solar.cfg
+	solardata.xml
+
+--------------------
+
+II) External Program Configuration
+
+[alco-solar.js]
+ 1: Name                       Solar Data
+ 2: Internal Code              SOLARDAT
+ 3: Start-up Directory         ../xtrn/alco-solar/
+ 4: Command Line               ?alco-solar.js
+ 5: Clean-up Command Line      
+ 6: Execution Cost             None
+ 7: Access Requirements        
+ 8: Execution Requirements     
+ 9: Multiple Concurrent Users  Yes
+10: Intercept Standard I/O     No
+11: Native (32-bit) Executable No
+12: Use Shell to Execute       No
+13: Modify User Data           No
+14: Execute on Event           No (or "Logon" or "Logon, Only", it is up to you)
+15: Pause After Execution      No
+16: BBS Drop File Type         None
+17: Place Drop File In         Node Directory
+18: Time Options...

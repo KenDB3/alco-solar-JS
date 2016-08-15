@@ -21,7 +21,9 @@ Files included with the alco-solar door:
 Files that may come with alco-solar depending on where you downloaded it from
 but these files are not specifically necessary for it to run:
 	.gitattributes
+	FILE_ID.DIZ
 	README.md
+	sysop.txt
 
 Files created when alco-solar runs the first time (don't delete these files
 because they keep track of the last update from hamqsl.com):

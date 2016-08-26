@@ -41,7 +41,7 @@ II) External Program Configuration
  4: Command Line               ?alco-solar.js
  5: Clean-up Command Line      
  6: Execution Cost             None
- 7: Access Requirements        
+ 7: Access Requirements        ANSI
  8: Execution Requirements     
  9: Multiple Concurrent Users  Yes
 10: Intercept Standard I/O     No
@@ -53,3 +53,7 @@ II) External Program Configuration
 16: BBS Drop File Type         None
 17: Place Drop File In         Node Directory
 18: Time Options...
+
+Note: If you run this as a Logon Event, you will want to make sure you set 
+Option 7, Access Requirements, to be ANSI. Since this door requires an
+ANSI capable terminal. 

@@ -73,94 +73,25 @@ if(!file_exists(xmlfile) || ((time() - last_solar_update) > 60*60)) {
 
 // read solar datapoints from xml and load into variables
 
-var timestamp = solardata.updated;
-
-var sfi = solardata.solarflux;
-if (sfi == undefined) {
-	var sfi = 0;
-}
-	    
+var timestamp = solardata.updated || 'Temporarily Unavailable';
+var sfi = solardata.solarflux || '0';
 var sfi_int = parseInt(sfi);
-
-var ai = solardata.aindex;
-if (ai == undefined) {
-	var ai = "No Data";
-}
-
-var ki = solardata.kindex;
-if (ki == undefined) {
-	var ki = "No Data";
-}
-
-var kint = solardata.kindexnt;
-if (kint == undefined) {
-	var kint = "No Data";
-}
-
-var xr = solardata.xray;
-if (xr == undefined) {
-	var xr = "No Data";
-}
-
-var spots = solardata.sunspots;
-if (spots == undefined) {
-	var spots = "No Data";
-}
-	    
-var hl = solardata.heliumline;
-if (hl == undefined) {
-	var hl = "No Data";
-}
-
-var pf = solardata.protonflux;
-if (pf == undefined) {
-	var pf = "No Data";
-}
-
-var ef = solardata.electonflux;
-if (ef == undefined) {
-	var ef = "No Data";
-}
-
-var au = solardata.aurora;
-if (au == undefined) {
-	var au = "No Data";
-}
-
-var norm = solardata.normalization;
-if (norm == undefined) {
-	var norm = "No Data";
-}
-
-var lat = solardata.latdegree;
-if (lat == undefined) {
-	var lat = "No Data";
-}
-
-var sw = solardata.solarwind;
-if (sw == undefined) {
-	var sw = "No Data";
-}
-	
-var mag = solardata.magneticfield;
-if (mag == undefined) {
-	var mag = "No Data";
-}
-
-var geomag = solardata.geomagfield;
-if (geomag == undefined) {
-	var geomag = "No Data";
-}
-
-var signoise = solardata.signalnoise;
-if (signoise == undefined) {
-	var signoise = "No Data";
-}
-
-var maxufreq = solardata.muf;
-if (maxufreq == undefined) {
-	var maxufreq = "No Data";
-}
+var ai = solardata.aindex || 'No Data';
+var ki = solardata.kindex || 'No Data';
+var kint = solardata.kindexnt || 'No Data';
+var xr = solardata.xray || 'No Data';
+var spots = solardata.sunspots || 'No Data';
+var hl = solardata.heliumline || 'No Data';
+var pf = solardata.protonflux || 'No Data';
+var ef = solardata.electonflux || 'No Data';
+var au = solardata.aurora || 'No Data';
+var norm = solardata.normalization || 'No Data';
+var lat = solardata.latdegree || 'No Data';
+var sw = solardata.solarwind || 'No Data';
+var mag = solardata.magneticfield || 'No Data';
+var geomag = solardata.geomagfield || 'No Data';
+var signoise = solardata.signalnoise || 'No Data';
+var maxufreq = solardata.muf || 'No Data';
 
 
 // HF conditions day / night

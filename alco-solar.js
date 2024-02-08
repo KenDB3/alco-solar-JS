@@ -43,7 +43,7 @@ if(!file_exists(xmlfile) || ((time() - last_solar_update) > 60*60)) {
 	try {
 	  var solardata = new XML(
 		(new HTTPRequest()).Get(
-		  'http://www.hamqsl.com/solarxml.php'
+		  'https://www.hamqsl.com/solarxml.php'
 		).replace(
 		  /<\?[^?]*\?>/g, ''
 		)
